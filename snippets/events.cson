@@ -1,0 +1,19 @@
+'.source.python':
+  'onServerErrorEvent':
+    'prefix': 'onServerErrorEvent '
+    'body': 'def onServerErrorEvent(self, schid, errorMessage, error, returnCode, extraMessage):\n\t${1:pass}'
+    'rightLabelHTML': '<span style="color:rgb(240,86,86)">event</span>'
+    'description': 'This is the global error event. Independent from the return value, all pyTSon plugins will receive this event.'
+    'descriptionMoreURL': 'https://pytson.4qt.de/ts3plugin.ts3plugin-class.html#onServerErrorEvent'
+  'onClientBanFromServerEvent':
+    'prefix': 'onClientBanFromServerEvent'
+    'body': 'def onClientBanFromServerEvent(self, schid, clientID, oldChannelID, newChannelID, visibility, kickerID, kickerName, kickerUniqueIdentifier, time, kickMessage):\n\t${1:pass}'
+    'rightLabelHTML': '<span style="color:rgb(240,86,86)">event</span>'
+    'description': 'This is called after a client was banned from the server.'
+    'descriptionMoreURL': 'https://pytson.4qt.de/ts3plugin.ts3plugin-class.html#onClientBanFromServerEvent'
+  'onNewChannelCreatedEvent':
+    'prefix': 'onNewChannelCreatedEvent'
+    'body': 'def onNewChannelCreatedEvent(self, schid, channelID, channelParentID, invokerID, invokerName, invokerUniqueIdentiﬁer):\n\t${1:pass}'
+    'rightLabelHTML': '<span style="color:rgb(240,86,86)">event</span>'
+    'description': 'This is called whenever a new channel was created.'
+    'descriptionMoreURL': 'https://pytson.4qt.de/ts3plugin.ts3plugin-class.html#onNewChannelCreatedEvent'

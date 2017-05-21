@@ -33,5 +33,5 @@
     'rightLabelHTML': '<span style="color:rgb(109,187,89)">define</span>'
   'CHANNEL_NEEDED_TALK_POWER':
     'prefix': 'CHANNEL_NEEDED_TALK_POWER'
-    'body': '(err, ${1:CHANNEL_NEEDED_TALK_POWER}) = ts3lib.getChannelVariableAsInt(schid, channelID, ts3defines.ChannelProperties.CHANNEL_NEEDED_TALK_POWER)\n'
+    'body': '(err, ${1:CHANNEL_NEEDED_TALK_POWER}) = ts3lib.getChannelVariableAsInt(schid, channelID, ts3defines.ChannelPropertiesRare.CHANNEL_NEEDED_TALK_POWER)\n'
     'rightLabelHTML': '<span style="color:rgb(109,187,89)">define</span>'

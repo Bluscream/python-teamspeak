@@ -1,19 +1,31 @@
 '.source.python':
   'ts3lib.banadd()':
     'prefix': 'banadd'
-    'body': 'ts3lib.banadd(serverConnectionHandlerID, ipRegExp, nameRegexp, uniqueIdentity, timeInSeconds, banReason, returnCode)'
-    #'rightLabelHTML': '<span style="color:lightblue">function</span>'
+    'body': 'err = ts3lib.banadd(schid, ipRegExp, nameRegexp, uniqueIdentity, timeInSeconds, banReason, returnCode)\n'
     'description': 'Adds a new ban.'
     'descriptionMoreURL': 'https://pytson.4qt.de/ts3lib-module.html#banadd'
-  'onServerErrorEvent()':
-    'prefix': 'onServerErrorEvent '
-    'body': 'def onServerErrorEvent(self, schid, errorMessage, error, returnCode, extraMessage):\n\t${1:pass}'
-    'rightLabelHTML': '<span style="color:rgb(240,86,86)">event</span>'
-    'description': 'This is the global error event. Independent from the return value, all pyTSon plugins will receive this event.'
-    'descriptionMoreURL': 'https://pytson.4qt.de/ts3plugin.ts3plugin-class.html#onServerErrorEvent'
-  'onClientBanFromServerEvent()':
-    'prefix': 'onClientBanFromServerEvent'
-    'body': 'def onClientBanFromServerEvent(self, schid, clientID, oldChannelID, newChannelID, visibility, kickerID, kickerName, kickerUniqueIdentifier, time, kickMessage):\n\t${1:pass}'
-    'rightLabelHTML': '<span style="color:rgb(240,86,86)">event</span>'
-    'description': 'This is called after a client was banned from the server.'
-    'descriptionMoreURL': 'https://pytson.4qt.de/ts3plugin.ts3plugin-class.html#onClientBanFromServerEvent'
+    'rightLabelHTML': '<span style="color:lightblue">function</span>'
+  'ts3lib.banclient()':
+    'prefix': 'banclient'
+    'body': 'err = ts3lib.banclient(schid, clientID, timeInSeconds, banReason, returnCode)\n'
+    'description': 'Bans an online client.'
+    'descriptionMoreURL': 'https://pytson.4qt.de/ts3lib-module.html#banclient'
+    'rightLabelHTML': '<span style="color:lightblue">function</span>'
+  'ts3lib.getChannelVariableAsString()':
+    'prefix': 'getChannelVariableAsString'
+    'body': '(err, ${1:str}) = ts3lib.getChannelVariableAsString(schid, channelID, ts3defines.${2:ChannelProperties.})'
+    'description': 'Returns a channel variable as string value.'
+    'descriptionMoreURL': 'https://pytson.4qt.de/ts3lib-module.html#getChannelVariableAsString'
+    'rightLabelHTML': '<span style="color:lightblue">function</span>'
+  'ts3lib.getChannelVariableAsInt()':
+    'prefix': 'getChannelVariableAsInt'
+    'body': '(err, ${1:int}) = ts3lib.getChannelVariableAsInt(schid, channelID, ts3defines.${2:ChannelProperties.})'
+    'description': 'Returns a channel variable as int value.'
+    'descriptionMoreURL': 'https://pytson.4qt.de/ts3lib-module.html#getChannelVariableAsInt'
+    'rightLabelHTML': '<span style="color:lightblue">function</span>'
+  'ts3lib.getChannelVariableAsUInt64()':
+    'prefix': 'getChannelVariableAsUInt64'
+    'body': '(err, ${1:uint64}) = ts3lib.getChannelVariableAsUInt64(schid, channelID, ts3defines.${2:ChannelProperties.})'
+    'description': 'Returns a channel variable as unsigned long long int value.'
+    'descriptionMoreURL': 'https://pytson.4qt.de/ts3lib-module.html#getChannelVariableAsUInt64'
+    'rightLabelHTML': '<span style="color:lightblue">function</span>'
