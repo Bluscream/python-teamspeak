@@ -1,0 +1,18 @@
+{
+  "name": "python-teamspeak",
+  "main": "./lib/python-teamspeak",
+  "version": "0.0.1",
+  "description": "Autocomplete for pytson's functions and events in atom.",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "python-teamspeak:toggle"
+  },
+  "repository": "https://github.com/atom/python-teamspeak",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.0.1"
+  },
+  "dependencies": {
+  }
+}

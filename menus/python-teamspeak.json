@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle python-teamspeak",
+        "command": "python-teamspeak:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "python-teamspeak",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "python-teamspeak:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

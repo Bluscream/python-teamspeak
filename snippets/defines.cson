@@ -1,0 +1,37 @@
+'.source.python':
+  'CHANNEL_NAME':
+    'prefix': 'CHANNEL_NAME'
+    'body': '(err, ${1:CHANNEL_NAME}) = ts3lib.getChannelVariableAsString(schid, channelID, ts3defines.ChannelProperties.CHANNEL_NAME)\n'
+    'rightLabelHTML': '<span style="color:rgb(109,187,89)">define</span>'
+  'CHANNEL_NAME_PHONETIC':
+    'prefix': 'CHANNEL_NAME_PHONETIC'
+    'body': '(err, ${1:CHANNEL_NAME_PHONETIC}) = ts3lib.getChannelVariableAsString(schid, channelID, ts3defines.ChannelPropertiesRare.CHANNEL_NAME_PHONETIC)\n'
+    'rightLabelHTML': '<span style="color:rgb(109,187,89)">define</span>'
+  'CHANNEL_TOPIC':
+    'prefix': 'CHANNEL_TOPIC'
+    'body': '(err, ${1:CHANNEL_TOPIC}) = ts3lib.getChannelVariableAsString(schid, channelID, ts3defines.ChannelProperties.CHANNEL_TOPIC)\n'
+    'rightLabelHTML': '<span style="color:rgb(109,187,89)">define</span>'
+  'CHANNEL_DESCRIPTION':
+    'prefix': 'CHANNEL_DESCRIPTION'
+    'body': '(err, ${1:CHANNEL_DESCRIPTION}) = ts3lib.getChannelVariableAsString(schid, channelID, ts3defines.ChannelProperties.CHANNEL_DESCRIPTION)\n'
+    'rightLabelHTML': '<span style="color:rgb(109,187,89)">define</span>'
+  'CHANNEL_CODEC':
+    'prefix': 'CHANNEL_CODEC'
+    'body': '(err, ${1:CHANNEL_CODEC}) = ts3lib.getChannelVariableAsInt(schid, channelID, ts3defines.ChannelProperties.CHANNEL_CODEC)\n'
+    'rightLabelHTML': '<span style="color:rgb(109,187,89)">define</span>'
+  'CHANNEL_CODEC_QUALITY':
+    'prefix': 'CHANNEL_CODEC_QUALITY'
+    'body': '(err, ${1:CHANNEL_CODEC_QUALITY}) = ts3lib.getChannelVariableAsInt(schid, channelID, ts3defines.ChannelProperties.CHANNEL_CODEC_QUALITY)\n'
+    'rightLabelHTML': '<span style="color:rgb(109,187,89)">define</span>'
+  'CHANNEL_MAXCLIENTS':
+    'prefix': 'CHANNEL_MAXCLIENTS'
+    'body': '(err, ${1:CHANNEL_MAXCLIENTS}) = ts3lib.getChannelVariableAsUInt64(schid, channelID, ts3defines.ChannelProperties.CHANNEL_MAXCLIENTS)\n'
+    'rightLabelHTML': '<span style="color:rgb(109,187,89)">define</span>'
+  'CHANNEL_MAXFAMILYCLIENTS':
+    'prefix': 'CHANNEL_MAXFAMILYCLIENTS'
+    'body': '(err, ${1:CHANNEL_MAXFAMILYCLIENTS}) = ts3lib.getChannelVariableAsUInt64(schid, channelID, ts3defines.ChannelProperties.CHANNEL_MAXFAMILYCLIENTS)\n'
+    'rightLabelHTML': '<span style="color:rgb(109,187,89)">define</span>'
+  'CHANNEL_NEEDED_TALK_POWER':
+    'prefix': 'CHANNEL_NEEDED_TALK_POWER'
+    'body': '(err, ${1:CHANNEL_NEEDED_TALK_POWER}) = ts3lib.getChannelVariableAsInt(schid, channelID, ts3defines.ChannelProperties.CHANNEL_NEEDED_TALK_POWER)\n'
+    'rightLabelHTML': '<span style="color:rgb(109,187,89)">define</span>'
